@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthcare Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAi-Hx2-R48hDYseM0w5AGqixh6SX3c_dD5HJxQZCfv3GOEimh" alt="Icon">
+      <div>
+        <strong class="logo">Track Well</strong><br>
+        Stay Fit With Trackwell
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <nav>
+      <a href="user.html" class="oval-button">Sign in/Log in</a>
+      <a href="finalhome.html" class="oval-button">Home</a>
+      <a href="contact.html" class="oval-button">Contact Us</a>
+    </nav>
+  </header>
+
+ 
+
+  <!-- Hero Section -->
+  <section class="hero">
+    
+    
+      <div class="content">
+        <div class="text-area">
+          
+        </div>
+        <div class="image-area">
+          <div class="image-wrapper">
+            <img src="C:\Users\Prithwish Chatterjee\OneDrive\Pictures\Screenshots\Screenshot 2025-04-19 195947.png" alt="">
+          </div>
+        </div>
+      </div>
+    
+      
+     
+    </div>
+  </section>
+
+  <!-- Main Buttons (Now vertical if you change flex-direction) -->
+  <div class="main-button-section">
+    <a href="info.html" class="card">
+      <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/user_information.png" alt="User Icon">
+      <div>
+        <strong>User details</strong><br>
+        Users every details
+      </div>
+    </a>
+
+    <a href="hospitals.html" class="card">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/017/177/954/small/round-medical-cross-symbol-on-transparent-background-free-png.png" alt="Hospital Icon">
+      <div>
+        <strong>Hospitals</strong><br>
+        Health needs under one roof
+      </div>
+    </a>
+
+    <a href="diet.html" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3061/3061227.png" alt="Diet Icon">
+      <div>
+        <strong>DIET AND EXERCISE</strong><br>
+        Tips for staying fit
+      </div>
+  </a>
+
+   <!-- Second row buttons -->
+  <div style="display: flex; gap: 20px; margin-top: 20px;">
+    <a href="bmr.html" class="card"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="BMI Icon">
+        <div>
+          <strong>BMR CALCULATOR</strong><br>
+          Calculate your BMR
+        </div>
+    </a>
+    
+    <a href="about.html" class="card">
+      <img src="https://cdn-icons-png.freepik.com/256/12099/12099654.png?semt=ais_hybrid" alt="About Icon">
+      <div>
+        <strong>About us</strong><br>
+        Gives every details about us
+      </div>
+    </a>
+  </div>
+</div>
+  
+
+  <!-- Floating Chatbot Button -->
+  <a href="assistant.html" class="chatbot-button" title="Chat with a Doctor">
+    <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Doctor Chatbot" />
+  </a>
+
+
+  <div class="blogs-section">
+    <div class="header">
+      <h2>Explore our blogs</h2>
+      <a href="#">View all</a>
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="card-slider" id="cardSlider">
+
+        <!-- Blog Card as Button -->
+        
+        <button class="blog-card" onclick="openBlog('bodyburn.html')">
+          <div class="tag">Diabetology/Endocrinology</div>
+          <img src="https://www.fortishealthcare.com/drupal-data/styles/blog_detail/azblob/2025-02/calories_1.png?itok=ojYs-ThR" alt="">
+          <div class="card-content">
+            <h4>How Many Calories Does Your Body Burn Naturally Each Day?</h4>
+            <p>Source : internet</p>
+              
+          </div>
+        </button>
+        
+        
+
+        <button class="blog-card" onclick="openBlog('kidney.html')">
+          <div class="tag">Nephrology</div>
+          <img src="https://aasthabariatrics.com/wp-content/uploads/2024/05/how-obesity-impact-kidney-1024x576.jpg" alt="">
+          <div class="card-content">
+            <h4>How Obesity Affects the Kidneys?</h4>
+            <p>Source : internet</p>
+          </div>
+        </button>
+
+        <button class="blog-card" onclick="openBlog('egg.html')">
+          <div class="tag">Cardiac Sciences</div>
+          <img src="https://i.ytimg.com/vi/-IAPu3gwT_I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB_h73NSVnQn8kzOF59jV7X0Leg3A" alt="">
+          <div class="card-content">
+            <h4>Is It Safe to Eat Eggs Daily? Examining the Health Implications</h4>
+            <p>Source : internet</p>
+          </div>
+        </button>
+
+        <button class="blog-card" onclick="openBlog('sports.html')">
+          <div class="tag">Mental Health and Behavioural Sciences</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptZk71Yu7GgsKNyEwyIxgyDva9uteBwZK8Q&s" alt="">
+          <div class="card-content">
+            <h4>Sports Psychology: Health, Happiness and Peak Performance</h4>
+            <p>Source : internet</p>
+              
+          </div>
+        </button>
+
+        <button class="blog-card" onclick="openBlog('Sugar.html')">
+            <div class="tag">Internal Medicine</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw9KAbgmDuNizPuqSyr8vpKML0fDiM2wbjPQ&s" alt="">
+            <div class="card-content">
+              <h4>Oatmeal for Breakfast: Always Healthy or Sometimes Misleading?</h4>
+              <p>Source : internet</p>
+            
+            </div>
+          </button>
+
+          <button class="blog-card" onclick="openBlog('pome.html')">
+            <div class="tag">Gastroenterology and Hepatobiliary Sciences</div>
+            <img src="https://images.moneycontrol.com/static-mcnews/2024/06/20240626074901_Pomegranate.jpg?impolicy=website&width=770&height=431" alt="">
+            <div class="card-content">
+              <h4>The Health Benefits of Pomegranates</h4>
+              <p>Source : internet</p>
+                
+            </div>
+          </button>
+
+         
+          <button class="blog-card" onclick="openBlog('seeds.html')">
+            <div class="tag">Internal Medicine</div>
+            
+            <img src="https://images.moneycontrol.com/static-mcnews/2024/01/Health-benefits-of-sesame-seeds.jpg?impolicy=website&width=1600&height=900" alt="">
+            <div class="card-content">
+              <h4>Sesame Seeds: A Tiny Superfood Packed with Powerful Health Benefits</h4>
+              <p>Source : internet</p>
+            </div>
+          </button>
+      </div>
+
+      <div class="nav-buttons">
+        <button onclick="scrollSlider(-1)">‹</button>
+        <button onclick="scrollSlider(1)">›</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    fetch('/api/hello')
+      .then(res => res.json())
+      .then(data => {
+        console.log(data.message);
+      });
+  </script>
+</body>
+</html>

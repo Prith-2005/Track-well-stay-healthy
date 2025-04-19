@@ -1,0 +1,157 @@
+/* Body with animated gradient background */
+body {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+  }
+  
+  /* Gradient animation keyframes */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Image sizing utility */
+  .ui-w-80 {
+    width : 80px !important;
+    height: auto;
+  }
+  
+  /* Default button with smooth hover transition */
+  .btn-default {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  .btn-default:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+  }
+  
+  /* Label button spacing */
+  label.btn {
+    margin-bottom: 0;
+  }
+  
+  /* Outline primary button — modern style */
+  .btn-outline-primary {
+    border-color: #007bff;
+    background: transparent;
+    color: #007bff;
+    transition: all 0.3s ease;
+  }
+  .btn-outline-primary:hover {
+    background: #007bff;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  /* All buttons clickable cursor */
+  .btn {
+    cursor: pointer;
+  }
+  
+  /* Soft light text */
+  .text-light {
+    color: #e0e0e0 !important;
+  }
+  
+  /* Facebook button — modern gradient */
+  .btn-facebook {
+    background: linear-gradient(45deg, #3b5998, #8b9dc3);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .btn-facebook:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Instagram button — colorful gradient */
+  .btn-instagram {
+    background: radial-gradient(circle at 30% 107%, 
+      #fdf497 0%, #fdf497 5%, 
+      #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .btn-instagram:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Card with glass effect */
+  .card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1.25rem;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(31, 38, 135, 0.45);
+  }
+  
+  /* Row border overflow fix */
+  .row-bordered {
+    overflow: hidden;
+  }
+  
+  /* Hidden file input for profile pictures, etc. */
+  .account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  
+  /* Active link highlighting */
+  .account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+    background: rgba(0, 123, 255, 0.1) !important;
+    color: #007bff !important;
+  }
+  
+  /* Light style list group items */
+  .light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+    transition: background 0.3s ease;
+  }
+  .light-style .account-settings-links .list-group-item:hover {
+    background: rgba(0, 123, 255, 0.05);
+  }
+  
+  /* Dark mode active link styling */
+  .dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  
+  
+  .oval-button {
+    background-color: #15d776;
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .oval-button:hover {
+    background-color: #13c36a;
+  }
